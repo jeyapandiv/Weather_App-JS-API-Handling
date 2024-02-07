@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(9, 23, 101);
+    display: flex;
+    justify-content: center;
+}
+
+.navmenu,
+.midMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navmenu {
+    width: 80%;
+    height: 100%;
+}
+
+.navmenu img {
+    width: 100px;
+    height: 50px;
+}
+
+.searchTop input {
+    height: 35px;
+}
+
+.searchTop input,
+.midMenu input {
+    width: 240px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    border-radius: 17px;
+}
+
+.searchTop input:hover,
+.midMenu input:hover,
+.unitButtons button:hover,
+i {
+    cursor: pointer;
+}
+
+.searchTop i,
+.searchMid i {
+    color: grey;
+    font-size: 22px;
+    position: relative;
+    left: -40px;
+    top: 5px;
+
+}
+
+.topDesc {
+    width: 100%;
+    height: 240px;
+    background-image: url(winter-tree-snow-5k-3m-1280x720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topDesc,
+.midbar {
+    display: flex;
+    justify-content: center;
+}
+
+.topDesc .topDescDiscript {
+    width: 80%;
+    color: rgb(250, 250, 250);
+    font-weight: 900;
+}
+
+.topDescDiscript h1 {
+    width: 390px;
+    padding-top: 100px;
+}
+
+.midbar {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(169, 181, 218, 0.696);
+}
+
+.midbar .midMenu {
+    width: 80%;
+}
+
+.midMenu input {
+    height: 35px;
+}
+
+.searchMid i {
+    font-size: 20px;
+}
+
+.unitButtons {
+    width: 200px;
+    background-color: rgba(140, 150, 177, 0.83);
+    margin-right: 35px;
+}
+
+.unitButtons,
+.unitButtons button {
+    height: 30px;
+    border-radius: 15px;
+}
+
+.unitButtons button {
+    width: 50%;
+    border: none;
+    outline: none;
+}
+
+.weatherDisplay {
+    background-color: rgba(185, 198, 238, 0.696);
+    height: 289px;
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.weatherDisplay .weatherDisplayDes {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.weatherDisplayDes img {
+    width: 20px;
+    height: 20px;
+}
+
+.weatherDis {
+    color: white;
+    width: 520px;
+    height: 270px;
+    padding-left: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+}
+
+.tempDiv img {
+    width: 25px;
+    height: 25px;
+}
+
+.windHumidity {
+    display: flex;
+    gap: 30px;
+}
+
+.tempDes,
+.windHumidity {
+    width: 270px;
+    padding-top: 20px;
+}
+
+.tempDes {
+    padding-bottom: 50px;
+}
+
+.tempDiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flipImage img {
+    width: 250px;
+    height: 270px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.flipImage {
+    width: 250px;
+    height: 270px;
+    border-radius: 0px 5px 5px 0px;
+    position: relative;
+    top: -210px;
+    left: 270px;
+}
+
+/* classlist */
+.toggleBtn {
+    color: white;
+    background-color: rgba(146, 156, 184, 0.83);
+    transition: 0.9s;
+}
+
+.linearOne {
+    background: linear-gradient(#7DC3C9, #C4DAC5, #E1B580);
+}
+
+.linearTwo {
+    background: linear-gradient(#634E68, #DE99A8, #51435F);
+}
+
+.linearThree {
+    background: linear-gradient(#1D0530, #312F61, #2C1E3A);
+}
+
+.disnone>*,
+.displayNone {
+    display: none;
+}
+
+.errorDis {
+    position: absolute;
+    padding-top: 100px;
+    width: 330px;
+    text-align: center;
+    color: rgba(0, 0, 5, 0.547);
+}
+
+.bcImage {
+    background-image: url(winter-tree-snow-5k-3m-1280x720.jpg);
+    background-position: left;
+}

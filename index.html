@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Open weather</title>
+</head>
+
+<body style="user-select: none;">
+    <div class="container">
+        <div class="navbar">
+            <div class="navmenu">
+                <img src="logo_white_cropped.png" alt="">
+                <div class="searchTop">
+                    <input class="cityName" type="text" placeholder="Search your city">
+                    <i class="fa-solid fa-magnifying-glass" onclick="search(this)"></i>
+                </div>
+            </div>
+        </div>
+        <div class="topDesc">
+            <div class="topDescDiscript">
+                <h1 >Weather in your city in a fast and elegant way</h1>
+            </div>
+        </div>
+        <div class="midbar">
+            <div class="midMenu">
+                <div class="searchMid">
+                    <input class="cityName" type="text" placeholder="Search your city">
+                    <i class="fa-solid fa-magnifying-glass" onclick="search(this)"></i>
+                </div>
+                <div class="unitButtons">
+                    <button id="metric" onclick="toggle(this)">Metric: &#8451;</button><button id="imperial"
+                        class="toggleBtn" onclick="toggle(this)">Imperial:&#8457;</button>
+                </div>
+            </div>
+        </div>
+        <div class="weatherDisplay">
+            <div class="weatherDisplayDes">
+                <div class="weatherDis">
+                    <div class="tempDes">
+                        <h3 class="cityNameDis" style="padding-left: 8px;"></h3>
+                        <div class=" tempDiv">
+                            <img src="thermometer.png" alt="">
+                            <h1 class="teampDis"> &#8451;</h1>
+                    </div>
+                </div>
+                <div class="windHumidity">
+                    <div class="windDes">
+                        <div class="windDiv">
+                            <img src="wind.png" alt="">
+                            <p class="windSpeedDis"> </p>
+                        </div>
+                        <p>Windspeed</p>
+                    </div>
+                    <div class="humidityDes">
+                        <div class="humidityDiv">
+                            <img src="humidity.png" alt="">
+                            <p class="humidityDis"> </p>
+                        </div>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="flipImage">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="error">
+                <h1>Search a city</h1>
+                <h1>to get weather details</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
